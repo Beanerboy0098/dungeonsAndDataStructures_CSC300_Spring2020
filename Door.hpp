@@ -18,6 +18,8 @@ class Door
 
     public:
         Door(string directionToRoomA, Room* roomA, string directionToRoomB, Room* roomB);
-
+        string getDirectionToOtherRoom(Room* currentRoom);
+        Room* getOtherRoom(Room* currentRoom);
+        bool hasDirection(string direction);
 };
 #endif
